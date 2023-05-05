@@ -16,7 +16,7 @@ After this, the App Clip can be run. Make sure to run the App Clip on a simulato
 Testing the App Clip on a real device is more difficult for several reasons:
 1. The implementation requires the App Clip and Apple Pay capabilities, which are only part of the paid Apple Developer Program.
 2. The zone logic is mocked, and the coordinates for where zones are located are hard coded. So in the location where testing is to be done, zones must first be entered to try out the full functionality of the App Clip.
-3. For Apple Pay to work, several configurations must be done outside of Xcode, like creating a merchant ID, sandbox tester, and payment processing certificate (more information ca be found in (Apple's documentation)[https://developer.apple.com/documentation/passkit/apple_pay/setting_up_apple_pay]).
+3. For Apple Pay to work, several configurations must be done outside of Xcode, like creating a merchant ID, sandbox tester, and payment processing certificate (more information ca be found in [Apple's documentation](https://developer.apple.com/documentation/passkit/apple_pay/setting_up_apple_pay)).
 
 Since testing the App Clip with the simulator is sufficient for showcasing,  there are no further instructions on how to run the App Clip on a real device.
 
