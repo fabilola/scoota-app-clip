@@ -21,7 +21,7 @@ Testing the App Clip on a real device is more difficult for several reasons:
 Since testing the App Clip with the simulator is sufficient for showcasing,  there are no further instructions on how to run the App Clip on a real device.
 
 
-## Preview
+## Preview[^1]
 <br>
 
 ![Screenshots of App Clip](./Images/scoota_preview.png "Screenshots of App Clip")
@@ -31,3 +31,5 @@ Since testing the App Clip with the simulator is sufficient for showcasing,  the
 </p>
 
 <br>
+
+[^1]: Source of scooter image: http://docs.voi.com/assets/
