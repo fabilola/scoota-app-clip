@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0307B9D3297ED69D0099F186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B046BB29799AAB009162AC /* Assets.xcassets */; };
+		030B538129A37ABA00F3B56E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030B538029A37ABA00F3B56E /* Constants.swift */; };
+		030B538229A37ABA00F3B56E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030B538029A37ABA00F3B56E /* Constants.swift */; };
+		031053832984123600636210 /* ActiveRideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053822984123600636210 /* ActiveRideView.swift */; };
+		031053842984123600636210 /* ActiveRideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053822984123600636210 /* ActiveRideView.swift */; };
+		03105386298416F500636210 /* ActiveRideViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03105385298416F500636210 /* ActiveRideViewViewModel.swift */; };
+		03105387298416F500636210 /* ActiveRideViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03105385298416F500636210 /* ActiveRideViewViewModel.swift */; };
+		031053892987C62400636210 /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053882987C62400636210 /* Zone.swift */; };
+		0310538A2987C62400636210 /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053882987C62400636210 /* Zone.swift */; };
+		0310538C2987DB8500636210 /* rideData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0310538B2987DB8500636210 /* rideData.json */; };
+		0310538D2987DB8500636210 /* rideData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0310538B2987DB8500636210 /* rideData.json */; };
+		0310538F2987DC5300636210 /* PreRide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310538E2987DC5300636210 /* PreRide.swift */; };
+		031053902987DC5300636210 /* PreRide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310538E2987DC5300636210 /* PreRide.swift */; };
+		031053922987F91100636210 /* RideSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053912987F91100636210 /* RideSummaryView.swift */; };
+		031053932987F91100636210 /* RideSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053912987F91100636210 /* RideSummaryView.swift */; };
+		0310539B2988034C00636210 /* RideSummaryViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310539A2988034C00636210 /* RideSummaryViewViewModel.swift */; };
+		0310539C2988034C00636210 /* RideSummaryViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310539A2988034C00636210 /* RideSummaryViewViewModel.swift */; };
+		0310539F29883A7D00636210 /* ZoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310539E29883A7D00636210 /* ZoneType.swift */; };
+		031053A029883A7D00636210 /* ZoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310539E29883A7D00636210 /* ZoneType.swift */; };
+		031053A22988448E00636210 /* EndRideFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053A12988448E00636210 /* EndRideFooter.swift */; };
+		031053A32988448E00636210 /* EndRideFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053A12988448E00636210 /* EndRideFooter.swift */; };
+		031053A5298845CF00636210 /* StringFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053A4298845CF00636210 /* StringFormatterUtils.swift */; };
+		031053A6298845CF00636210 /* StringFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053A4298845CF00636210 /* StringFormatterUtils.swift */; };
+		031053A82988460000636210 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053A72988460000636210 /* ViewUtils.swift */; };
+		031053A92988460000636210 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053A72988460000636210 /* ViewUtils.swift */; };
+		031053AB2989793000636210 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053AA2989793000636210 /* PaymentHandler.swift */; };
+		031053AC2989793000636210 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053AA2989793000636210 /* PaymentHandler.swift */; };
+		031053AF2991047000636210 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053AE2991047000636210 /* MapView.swift */; };
+		031053B02991047000636210 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031053AE2991047000636210 /* MapView.swift */; };
+		031053B529924DA900636210 /* NoParkZone.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 031053B429924DA900636210 /* NoParkZone.gpx */; };
+		031053B629924DA900636210 /* NoParkZone.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 031053B429924DA900636210 /* NoParkZone.gpx */; };
+		0313F99E298167C80073A2CB /* RentalOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F99D298167C80073A2CB /* RentalOverview.swift */; };
+		0313F99F298167C80073A2CB /* RentalOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F99D298167C80073A2CB /* RentalOverview.swift */; };
+		0313F9A1298168420073A2CB /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9A0298168420073A2CB /* Header.swift */; };
+		0313F9A2298168420073A2CB /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9A0298168420073A2CB /* Header.swift */; };
+		0313F9A42981694F0073A2CB /* ZoneIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9A32981694F0073A2CB /* ZoneIndicator.swift */; };
+		0313F9A52981694F0073A2CB /* ZoneIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9A32981694F0073A2CB /* ZoneIndicator.swift */; };
+		0313F9A7298169910073A2CB /* DetailIconBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9A6298169910073A2CB /* DetailIconBar.swift */; };
+		0313F9A8298169910073A2CB /* DetailIconBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9A6298169910073A2CB /* DetailIconBar.swift */; };
+		0313F9AA298169DF0073A2CB /* ZoneInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9A9298169DF0073A2CB /* ZoneInfo.swift */; };
+		0313F9AB298169DF0073A2CB /* ZoneInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9A9298169DF0073A2CB /* ZoneInfo.swift */; };
+		0313F9AD29816A370073A2CB /* BoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9AC29816A370073A2CB /* BoxStyle.swift */; };
+		0313F9AE29816A370073A2CB /* BoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9AC29816A370073A2CB /* BoxStyle.swift */; };
+		0313F9B029816A6D0073A2CB /* RidingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9AF29816A6D0073A2CB /* RidingInfo.swift */; };
+		0313F9B129816A6D0073A2CB /* RidingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9AF29816A6D0073A2CB /* RidingInfo.swift */; };
+		0313F9B329816AC50073A2CB /* TermsConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9B229816AC50073A2CB /* TermsConditions.swift */; };
+		0313F9B429816AC50073A2CB /* TermsConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9B229816AC50073A2CB /* TermsConditions.swift */; };
+		0313F9B629816AF80073A2CB /* HelpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9B529816AF80073A2CB /* HelpButton.swift */; };
+		0313F9B729816AF80073A2CB /* HelpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9B529816AF80073A2CB /* HelpButton.swift */; };
+		0313F9BA29816CC50073A2CB /* preRideData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0313F9B929816CC50073A2CB /* preRideData.json */; };
+		0313F9BB29816CC50073A2CB /* preRideData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0313F9B929816CC50073A2CB /* preRideData.json */; };
+		0313F9BE29816F350073A2CB /* JsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9BD29816F350073A2CB /* JsonUtils.swift */; };
+		0313F9BF29816F350073A2CB /* JsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9BD29816F350073A2CB /* JsonUtils.swift */; };
+		0313F9C129816F430073A2CB /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9C029816F430073A2CB /* Ride.swift */; };
+		0313F9C229816F430073A2CB /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9C029816F430073A2CB /* Ride.swift */; };
+		0313F9C4298170920073A2CB /* RentalOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9C3298170920073A2CB /* RentalOverviewViewModel.swift */; };
+		0313F9C5298170920073A2CB /* RentalOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9C3298170920073A2CB /* RentalOverviewViewModel.swift */; };
+		0313F9C7298188730073A2CB /* DetailIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9C6298188730073A2CB /* DetailIcon.swift */; };
+		0313F9C8298188730073A2CB /* DetailIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9C6298188730073A2CB /* DetailIcon.swift */; };
+		0313F9CA29818B6E0073A2CB /* IconTextCombination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9C929818B6E0073A2CB /* IconTextCombination.swift */; };
+		0313F9CB29818B6E0073A2CB /* IconTextCombination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9C929818B6E0073A2CB /* IconTextCombination.swift */; };
+		0313F9CD2982B8AE0073A2CB /* ApplePayFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9CC2982B8AE0073A2CB /* ApplePayFooter.swift */; };
+		0313F9CE2982B8AE0073A2CB /* ApplePayFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9CC2982B8AE0073A2CB /* ApplePayFooter.swift */; };
+		0313F9D62983CA820073A2CB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9D52983CA820073A2CB /* ModelData.swift */; };
+		0313F9D72983CA820073A2CB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9D52983CA820073A2CB /* ModelData.swift */; };
+		032CBE002976DF0300DE408D /* ScootaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032CBDFF2976DF0300DE408D /* ScootaApp.swift */; };
+		032CBE022976DF0300DE408D /* AppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032CBE012976DF0300DE408D /* AppContentView.swift */; };
+		032CBE072976DF0500DE408D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032CBE062976DF0500DE408D /* Preview Assets.xcassets */; };
+		032CBE0E2976E43200DE408D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 032CBE0D2976E43200DE408D /* .gitignore */; };
+		03B046B829799AA8009162AC /* ScootaClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B046B729799AA8009162AC /* ScootaClipApp.swift */; };
+		03B046BA29799AA8009162AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B046B929799AA8009162AC /* ContentView.swift */; };
+		03B046BC29799AAB009162AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B046BB29799AAB009162AC /* Assets.xcassets */; };
+		03B046BF29799AAB009162AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B046BE29799AAB009162AC /* Preview Assets.xcassets */; };
+		03B046C429799AAB009162AC /* ScootaClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 03B046B529799AA8009162AC /* ScootaClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03EE5A3D2996A403002ECC0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B046B929799AA8009162AC /* ContentView.swift */; };
+		03EE5A3F299A3AD3002ECC0C /* MapSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE5A3E299A3AD3002ECC0C /* MapSheet.swift */; };
+		03EE5A40299A3AD3002ECC0C /* MapSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE5A3E299A3AD3002ECC0C /* MapSheet.swift */; };
+		03EE5A42299BAA20002ECC0C /* ZoneLegend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE5A41299BAA20002ECC0C /* ZoneLegend.swift */; };
+		03EE5A43299BAA20002ECC0C /* ZoneLegend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE5A41299BAA20002ECC0C /* ZoneLegend.swift */; };
+		03EE5A48299E5DEF002ECC0C /* RidingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE5A47299E5DEF002ECC0C /* RidingSheet.swift */; };
+		03EE5A49299E5DEF002ECC0C /* RidingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE5A47299E5DEF002ECC0C /* RidingSheet.swift */; };
+		03F740B32993B158008B27BE /* PolygonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F740B22993B158008B27BE /* PolygonInfo.swift */; };
+		03F740B42993B158008B27BE /* PolygonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F740B22993B158008B27BE /* PolygonInfo.swift */; };
+		03F740B62993B262008B27BE /* OverlayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F740B52993B262008B27BE /* OverlayObject.swift */; };
+		03F740B72993B262008B27BE /* OverlayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F740B52993B262008B27BE /* OverlayObject.swift */; };
+		03F740B82993B92E008B27BE /* zones.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 03F740B12993AF4D008B27BE /* zones.geojson */; };
+		03F740B92993B92E008B27BE /* zones.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 03F740B12993AF4D008B27BE /* zones.geojson */; };
+		03F740BB2994080B008B27BE /* NormalZone.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 03F740BA2994080B008B27BE /* NormalZone.gpx */; };
+		03F740BC2994080B008B27BE /* NormalZone.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 03F740BA2994080B008B27BE /* NormalZone.gpx */; };
+		03F740BE2994F61E008B27BE /* SlowZone.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 03F740BD2994F61E008B27BE /* SlowZone.gpx */; };
+		03F740BF2994F61E008B27BE /* SlowZone.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 03F740BD2994F61E008B27BE /* SlowZone.gpx */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03B046C229799AAB009162AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032CBDF42976DF0300DE408D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03B046B429799AA8009162AC;
+			remoteInfo = ScootaClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03B0466429780DFA009162AC /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				03B046C429799AAB009162AC /* ScootaClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		030B538029A37ABA00F3B56E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		031053822984123600636210 /* ActiveRideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveRideView.swift; sourceTree = "<group>"; };
+		03105385298416F500636210 /* ActiveRideViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRideViewViewModel.swift; sourceTree = "<group>"; };
+		031053882987C62400636210 /* Zone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zone.swift; sourceTree = "<group>"; };
+		0310538B2987DB8500636210 /* rideData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rideData.json; sourceTree = "<group>"; };
+		0310538E2987DC5300636210 /* PreRide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreRide.swift; sourceTree = "<group>"; };
+		031053912987F91100636210 /* RideSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideSummaryView.swift; sourceTree = "<group>"; };
+		0310539A2988034C00636210 /* RideSummaryViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideSummaryViewViewModel.swift; sourceTree = "<group>"; };
+		0310539E29883A7D00636210 /* ZoneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneType.swift; sourceTree = "<group>"; };
+		031053A12988448E00636210 /* EndRideFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndRideFooter.swift; sourceTree = "<group>"; };
+		031053A4298845CF00636210 /* StringFormatterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormatterUtils.swift; sourceTree = "<group>"; };
+		031053A72988460000636210 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		031053AA2989793000636210 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		031053AD29897BCC00636210 /* Scoota.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scoota.entitlements; sourceTree = "<group>"; };
+		031053AE2991047000636210 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		031053B429924DA900636210 /* NoParkZone.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NoParkZone.gpx; sourceTree = "<group>"; };
+		0313F99D298167C80073A2CB /* RentalOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalOverview.swift; sourceTree = "<group>"; };
+		0313F9A0298168420073A2CB /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		0313F9A32981694F0073A2CB /* ZoneIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneIndicator.swift; sourceTree = "<group>"; };
+		0313F9A6298169910073A2CB /* DetailIconBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailIconBar.swift; sourceTree = "<group>"; };
+		0313F9A9298169DF0073A2CB /* ZoneInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneInfo.swift; sourceTree = "<group>"; };
+		0313F9AC29816A370073A2CB /* BoxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxStyle.swift; sourceTree = "<group>"; };
+		0313F9AF29816A6D0073A2CB /* RidingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidingInfo.swift; sourceTree = "<group>"; };
+		0313F9B229816AC50073A2CB /* TermsConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditions.swift; sourceTree = "<group>"; };
+		0313F9B529816AF80073A2CB /* HelpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpButton.swift; sourceTree = "<group>"; };
+		0313F9B929816CC50073A2CB /* preRideData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = preRideData.json; sourceTree = "<group>"; };
+		0313F9BD29816F350073A2CB /* JsonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtils.swift; sourceTree = "<group>"; };
+		0313F9C029816F430073A2CB /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		0313F9C3298170920073A2CB /* RentalOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalOverviewViewModel.swift; sourceTree = "<group>"; };
+		0313F9C6298188730073A2CB /* DetailIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailIcon.swift; sourceTree = "<group>"; };
+		0313F9C929818B6E0073A2CB /* IconTextCombination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextCombination.swift; sourceTree = "<group>"; };
+		0313F9CC2982B8AE0073A2CB /* ApplePayFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayFooter.swift; sourceTree = "<group>"; };
+		0313F9D52983CA820073A2CB /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		032CBDFC2976DF0300DE408D /* Scoota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoota.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		032CBDFF2976DF0300DE408D /* ScootaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScootaApp.swift; sourceTree = "<group>"; };
+		032CBE012976DF0300DE408D /* AppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentView.swift; sourceTree = "<group>"; };
+		032CBE062976DF0500DE408D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		032CBE0D2976E43200DE408D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		03B046B529799AA8009162AC /* ScootaClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScootaClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B046B729799AA8009162AC /* ScootaClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScootaClipApp.swift; sourceTree = "<group>"; };
+		03B046B929799AA8009162AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03B046BB29799AAB009162AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03B046BE29799AAB009162AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03B046C029799AAB009162AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03B046C129799AAB009162AC /* ScootaClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScootaClip.entitlements; sourceTree = "<group>"; };
+		03EE5A3E299A3AD3002ECC0C /* MapSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSheet.swift; sourceTree = "<group>"; };
+		03EE5A41299BAA20002ECC0C /* ZoneLegend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneLegend.swift; sourceTree = "<group>"; };
+		03EE5A47299E5DEF002ECC0C /* RidingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidingSheet.swift; sourceTree = "<group>"; };
+		03F740B12993AF4D008B27BE /* zones.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = zones.geojson; sourceTree = "<group>"; };
+		03F740B22993B158008B27BE /* PolygonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonInfo.swift; sourceTree = "<group>"; };
+		03F740B52993B262008B27BE /* OverlayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayObject.swift; sourceTree = "<group>"; };
+		03F740BA2994080B008B27BE /* NormalZone.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NormalZone.gpx; sourceTree = "<group>"; };
+		03F740BD2994F61E008B27BE /* SlowZone.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SlowZone.gpx; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		032CBDF92976DF0300DE408D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B046B229799AA8009162AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0307B9CF297ECEC30099F186 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0310539D29883A5E00636210 /* Utils */,
+				0313F9BC29816EEE0073A2CB /* Model */,
+				0313F9B829816B9E0073A2CB /* Resources */,
+				0313F999298167020073A2CB /* ViewModel */,
+				0313F997298166C30073A2CB /* Views */,
+				03B046BB29799AAB009162AC /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0307B9D4297EE2F30099F186 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0313F9A0298168420073A2CB /* Header.swift */,
+				0313F9B229816AC50073A2CB /* TermsConditions.swift */,
+				0313F9B529816AF80073A2CB /* HelpButton.swift */,
+				0313F9C6298188730073A2CB /* DetailIcon.swift */,
+				0313F9C929818B6E0073A2CB /* IconTextCombination.swift */,
+				0313F9CC2982B8AE0073A2CB /* ApplePayFooter.swift */,
+				0313F9A6298169910073A2CB /* DetailIconBar.swift */,
+				031053A12988448E00636210 /* EndRideFooter.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0310539D29883A5E00636210 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0313F9BD29816F350073A2CB /* JsonUtils.swift */,
+				031053A4298845CF00636210 /* StringFormatterUtils.swift */,
+				031053A72988460000636210 /* ViewUtils.swift */,
+				031053AA2989793000636210 /* PaymentHandler.swift */,
+				03F740B52993B262008B27BE /* OverlayObject.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0311521B29A75E43008079B3 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				0313F99D298167C80073A2CB /* RentalOverview.swift */,
+				031053822984123600636210 /* ActiveRideView.swift */,
+				031053912987F91100636210 /* RideSummaryView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		0311521C29A75E6B008079B3 /* ZoneViews */ = {
+			isa = PBXGroup;
+			children = (
+				0313F9A9298169DF0073A2CB /* ZoneInfo.swift */,
+				0313F9A32981694F0073A2CB /* ZoneIndicator.swift */,
+				03EE5A41299BAA20002ECC0C /* ZoneLegend.swift */,
+			);
+			path = ZoneViews;
+			sourceTree = "<group>";
+		};
+		0311521D29A75EC8008079B3 /* MapViews */ = {
+			isa = PBXGroup;
+			children = (
+				031053AE2991047000636210 /* MapView.swift */,
+				03EE5A3E299A3AD3002ECC0C /* MapSheet.swift */,
+			);
+			path = MapViews;
+			sourceTree = "<group>";
+		};
+		0311521E29A75EE6008079B3 /* RideViews */ = {
+			isa = PBXGroup;
+			children = (
+				0313F9AF29816A6D0073A2CB /* RidingInfo.swift */,
+				03EE5A47299E5DEF002ECC0C /* RidingSheet.swift */,
+			);
+			path = RideViews;
+			sourceTree = "<group>";
+		};
+		0313F997298166C30073A2CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0311521B29A75E43008079B3 /* MainViews */,
+				0311521D29A75EC8008079B3 /* MapViews */,
+				0311521C29A75E6B008079B3 /* ZoneViews */,
+				0311521E29A75EE6008079B3 /* RideViews */,
+				0307B9D4297EE2F30099F186 /* Components */,
+				0313F9AC29816A370073A2CB /* BoxStyle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0313F999298167020073A2CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				03105385298416F500636210 /* ActiveRideViewViewModel.swift */,
+				0313F9C3298170920073A2CB /* RentalOverviewViewModel.swift */,
+				0310539A2988034C00636210 /* RideSummaryViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0313F9B829816B9E0073A2CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03F740BA2994080B008B27BE /* NormalZone.gpx */,
+				031053B429924DA900636210 /* NoParkZone.gpx */,
+				03F740BD2994F61E008B27BE /* SlowZone.gpx */,
+				0313F9B929816CC50073A2CB /* preRideData.json */,
+				0310538B2987DB8500636210 /* rideData.json */,
+				03F740B12993AF4D008B27BE /* zones.geojson */,
+				030B538029A37ABA00F3B56E /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0313F9BC29816EEE0073A2CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0313F9C029816F430073A2CB /* Ride.swift */,
+				0313F9D52983CA820073A2CB /* ModelData.swift */,
+				031053882987C62400636210 /* Zone.swift */,
+				0310538E2987DC5300636210 /* PreRide.swift */,
+				0310539E29883A7D00636210 /* ZoneType.swift */,
+				03F740B22993B158008B27BE /* PolygonInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		032CBDF32976DF0300DE408D = {
+			isa = PBXGroup;
+			children = (
+				0307B9CF297ECEC30099F186 /* Shared */,
+				032CBE0D2976E43200DE408D /* .gitignore */,
+				032CBDFE2976DF0300DE408D /* Scoota */,
+				03B046B629799AA8009162AC /* ScootaClip */,
+				032CBDFD2976DF0300DE408D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		032CBDFD2976DF0300DE408D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				032CBDFC2976DF0300DE408D /* Scoota.app */,
+				03B046B529799AA8009162AC /* ScootaClip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		032CBDFE2976DF0300DE408D /* Scoota */ = {
+			isa = PBXGroup;
+			children = (
+				031053AD29897BCC00636210 /* Scoota.entitlements */,
+				032CBDFF2976DF0300DE408D /* ScootaApp.swift */,
+				032CBE012976DF0300DE408D /* AppContentView.swift */,
+				032CBE052976DF0500DE408D /* Preview Content */,
+			);
+			path = Scoota;
+			sourceTree = "<group>";
+		};
+		032CBE052976DF0500DE408D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				032CBE062976DF0500DE408D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03B046B629799AA8009162AC /* ScootaClip */ = {
+			isa = PBXGroup;
+			children = (
+				03B046B729799AA8009162AC /* ScootaClipApp.swift */,
+				03B046B929799AA8009162AC /* ContentView.swift */,
+				03B046C029799AAB009162AC /* Info.plist */,
+				03B046C129799AAB009162AC /* ScootaClip.entitlements */,
+				03B046BD29799AAB009162AC /* Preview Content */,
+			);
+			path = ScootaClip;
+			sourceTree = "<group>";
+		};
+		03B046BD29799AAB009162AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03B046BE29799AAB009162AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		032CBDFB2976DF0300DE408D /* Scoota */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032CBE0A2976DF0500DE408D /* Build configuration list for PBXNativeTarget "Scoota" */;
+			buildPhases = (
+				032CBDF82976DF0300DE408D /* Sources */,
+				032CBDF92976DF0300DE408D /* Frameworks */,
+				032CBDFA2976DF0300DE408D /* Resources */,
+				03B0466429780DFA009162AC /* Embed App Clips */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03B046C329799AAB009162AC /* PBXTargetDependency */,
+			);
+			name = Scoota;
+			productName = Scoota;
+			productReference = 032CBDFC2976DF0300DE408D /* Scoota.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03B046B429799AA8009162AC /* ScootaClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B046C529799AAB009162AC /* Build configuration list for PBXNativeTarget "ScootaClip" */;
+			buildPhases = (
+				03B046B129799AA8009162AC /* Sources */,
+				03B046B229799AA8009162AC /* Frameworks */,
+				03B046B329799AA8009162AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScootaClip;
+			productName = ScootaClip;
+			productReference = 03B046B529799AA8009162AC /* ScootaClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		032CBDF42976DF0300DE408D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					032CBDFB2976DF0300DE408D = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					03B046B429799AA8009162AC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 032CBDF72976DF0300DE408D /* Build configuration list for PBXProject "Scoota" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 032CBDF32976DF0300DE408D;
+			productRefGroup = 032CBDFD2976DF0300DE408D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				032CBDFB2976DF0300DE408D /* Scoota */,
+				03B046B429799AA8009162AC /* ScootaClip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		032CBDFA2976DF0300DE408D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F740BB2994080B008B27BE /* NormalZone.gpx in Resources */,
+				0310538C2987DB8500636210 /* rideData.json in Resources */,
+				031053B529924DA900636210 /* NoParkZone.gpx in Resources */,
+				032CBE072976DF0500DE408D /* Preview Assets.xcassets in Resources */,
+				0307B9D3297ED69D0099F186 /* Assets.xcassets in Resources */,
+				032CBE0E2976E43200DE408D /* .gitignore in Resources */,
+				03F740BE2994F61E008B27BE /* SlowZone.gpx in Resources */,
+				0313F9BA29816CC50073A2CB /* preRideData.json in Resources */,
+				03F740B82993B92E008B27BE /* zones.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B046B329799AA8009162AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F740BF2994F61E008B27BE /* SlowZone.gpx in Resources */,
+				0313F9BB29816CC50073A2CB /* preRideData.json in Resources */,
+				03F740BC2994080B008B27BE /* NormalZone.gpx in Resources */,
+				03F740B92993B92E008B27BE /* zones.geojson in Resources */,
+				031053B629924DA900636210 /* NoParkZone.gpx in Resources */,
+				03B046BF29799AAB009162AC /* Preview Assets.xcassets in Resources */,
+				03B046BC29799AAB009162AC /* Assets.xcassets in Resources */,
+				0310538D2987DB8500636210 /* rideData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		032CBDF82976DF0300DE408D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0313F9CA29818B6E0073A2CB /* IconTextCombination.swift in Sources */,
+				0310539F29883A7D00636210 /* ZoneType.swift in Sources */,
+				03F740B32993B158008B27BE /* PolygonInfo.swift in Sources */,
+				03F740B62993B262008B27BE /* OverlayObject.swift in Sources */,
+				031053922987F91100636210 /* RideSummaryView.swift in Sources */,
+				0313F9B029816A6D0073A2CB /* RidingInfo.swift in Sources */,
+				0313F9A1298168420073A2CB /* Header.swift in Sources */,
+				0313F9AA298169DF0073A2CB /* ZoneInfo.swift in Sources */,
+				0313F9BE29816F350073A2CB /* JsonUtils.swift in Sources */,
+				03EE5A48299E5DEF002ECC0C /* RidingSheet.swift in Sources */,
+				031053A22988448E00636210 /* EndRideFooter.swift in Sources */,
+				03EE5A3D2996A403002ECC0C /* ContentView.swift in Sources */,
+				031053AF2991047000636210 /* MapView.swift in Sources */,
+				0313F9A7298169910073A2CB /* DetailIconBar.swift in Sources */,
+				0313F9B629816AF80073A2CB /* HelpButton.swift in Sources */,
+				0313F9C4298170920073A2CB /* RentalOverviewViewModel.swift in Sources */,
+				0313F9C7298188730073A2CB /* DetailIcon.swift in Sources */,
+				0310539B2988034C00636210 /* RideSummaryViewViewModel.swift in Sources */,
+				0313F9B329816AC50073A2CB /* TermsConditions.swift in Sources */,
+				0313F99E298167C80073A2CB /* RentalOverview.swift in Sources */,
+				030B538129A37ABA00F3B56E /* Constants.swift in Sources */,
+				031053AB2989793000636210 /* PaymentHandler.swift in Sources */,
+				032CBE022976DF0300DE408D /* AppContentView.swift in Sources */,
+				031053A5298845CF00636210 /* StringFormatterUtils.swift in Sources */,
+				0310538F2987DC5300636210 /* PreRide.swift in Sources */,
+				0313F9A42981694F0073A2CB /* ZoneIndicator.swift in Sources */,
+				03EE5A42299BAA20002ECC0C /* ZoneLegend.swift in Sources */,
+				031053A82988460000636210 /* ViewUtils.swift in Sources */,
+				03105386298416F500636210 /* ActiveRideViewViewModel.swift in Sources */,
+				031053892987C62400636210 /* Zone.swift in Sources */,
+				0313F9AD29816A370073A2CB /* BoxStyle.swift in Sources */,
+				032CBE002976DF0300DE408D /* ScootaApp.swift in Sources */,
+				0313F9C129816F430073A2CB /* Ride.swift in Sources */,
+				0313F9CD2982B8AE0073A2CB /* ApplePayFooter.swift in Sources */,
+				031053832984123600636210 /* ActiveRideView.swift in Sources */,
+				03EE5A3F299A3AD3002ECC0C /* MapSheet.swift in Sources */,
+				0313F9D62983CA820073A2CB /* ModelData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B046B129799AA8009162AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0313F9CB29818B6E0073A2CB /* IconTextCombination.swift in Sources */,
+				030B538229A37ABA00F3B56E /* Constants.swift in Sources */,
+				031053A029883A7D00636210 /* ZoneType.swift in Sources */,
+				03F740B42993B158008B27BE /* PolygonInfo.swift in Sources */,
+				03F740B72993B262008B27BE /* OverlayObject.swift in Sources */,
+				031053932987F91100636210 /* RideSummaryView.swift in Sources */,
+				0313F9B129816A6D0073A2CB /* RidingInfo.swift in Sources */,
+				0313F9A2298168420073A2CB /* Header.swift in Sources */,
+				0313F9AB298169DF0073A2CB /* ZoneInfo.swift in Sources */,
+				0313F9BF29816F350073A2CB /* JsonUtils.swift in Sources */,
+				031053A32988448E00636210 /* EndRideFooter.swift in Sources */,
+				03EE5A43299BAA20002ECC0C /* ZoneLegend.swift in Sources */,
+				031053B02991047000636210 /* MapView.swift in Sources */,
+				0313F9A8298169910073A2CB /* DetailIconBar.swift in Sources */,
+				03EE5A49299E5DEF002ECC0C /* RidingSheet.swift in Sources */,
+				0313F9B729816AF80073A2CB /* HelpButton.swift in Sources */,
+				0313F9C5298170920073A2CB /* RentalOverviewViewModel.swift in Sources */,
+				0313F9C8298188730073A2CB /* DetailIcon.swift in Sources */,
+				0310539C2988034C00636210 /* RideSummaryViewViewModel.swift in Sources */,
+				0313F9B429816AC50073A2CB /* TermsConditions.swift in Sources */,
+				0313F99F298167C80073A2CB /* RentalOverview.swift in Sources */,
+				031053AC2989793000636210 /* PaymentHandler.swift in Sources */,
+				03B046BA29799AA8009162AC /* ContentView.swift in Sources */,
+				031053A6298845CF00636210 /* StringFormatterUtils.swift in Sources */,
+				031053902987DC5300636210 /* PreRide.swift in Sources */,
+				0313F9A52981694F0073A2CB /* ZoneIndicator.swift in Sources */,
+				03EE5A40299A3AD3002ECC0C /* MapSheet.swift in Sources */,
+				031053A92988460000636210 /* ViewUtils.swift in Sources */,
+				03105387298416F500636210 /* ActiveRideViewViewModel.swift in Sources */,
+				0310538A2987C62400636210 /* Zone.swift in Sources */,
+				0313F9AE29816A370073A2CB /* BoxStyle.swift in Sources */,
+				03B046B829799AA8009162AC /* ScootaClipApp.swift in Sources */,
+				0313F9C229816F430073A2CB /* Ride.swift in Sources */,
+				0313F9CE2982B8AE0073A2CB /* ApplePayFooter.swift in Sources */,
+				031053842984123600636210 /* ActiveRideView.swift in Sources */,
+				0313F9D72983CA820073A2CB /* ModelData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03B046C329799AAB009162AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03B046B429799AA8009162AC /* ScootaClip */;
+			targetProxy = 03B046C229799AAB009162AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		032CBE082976DF0500DE408D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		032CBE092976DF0500DE408D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		032CBE0B2976DF0500DE408D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scoota/Scoota.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scoota/Preview Content\"";
+				DEVELOPMENT_TEAM = SFJ44RUBE9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.scoota;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		032CBE0C2976DF0500DE408D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scoota/Scoota.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scoota/Preview Content\"";
+				DEVELOPMENT_TEAM = SFJ44RUBE9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.scoota;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03B046C629799AAB009162AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScootaClip/ScootaClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScootaClip/Preview Content\"";
+				DEVELOPMENT_TEAM = SFJ44RUBE9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScootaClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Scoota;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App Clip needs your location to check zones";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.scoota.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03B046C729799AAB009162AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScootaClip/ScootaClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScootaClip/Preview Content\"";
+				DEVELOPMENT_TEAM = SFJ44RUBE9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScootaClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Scoota;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App Clip needs your location to check zones";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.scoota.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		032CBDF72976DF0300DE408D /* Build configuration list for PBXProject "Scoota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032CBE082976DF0500DE408D /* Debug */,
+				032CBE092976DF0500DE408D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032CBE0A2976DF0500DE408D /* Build configuration list for PBXNativeTarget "Scoota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032CBE0B2976DF0500DE408D /* Debug */,
+				032CBE0C2976DF0500DE408D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03B046C529799AAB009162AC /* Build configuration list for PBXNativeTarget "ScootaClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B046C629799AAB009162AC /* Debug */,
+				03B046C729799AAB009162AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 032CBDF42976DF0300DE408D /* Project object */;
+}
